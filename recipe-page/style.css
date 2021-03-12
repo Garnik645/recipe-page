@@ -1,0 +1,338 @@
+/* WHOLE BODY SELECTORS */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.25%;
+   background-color: var(--light-color);
+   transition: background 0.2s ease-in-out;
+}
+
+:root {
+   --main-color: #F2994A;
+   --light-color: white;
+   --heavy-color: black;
+   --light-gray: #BDBDBD;
+   --middle-gray: #828282;
+   --dark-gray: #333333;
+   --special-gray: #4F4F4F;
+   --special-color: white;
+}
+
+body::-webkit-scrollbar {
+   width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+   transition: background 0.2s ease-in-out;
+   background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+}
+
+
+
+.con {
+   transition: background 0.2s ease-in-out;
+   max-width: 1000px;
+   width: 100%;
+   height: auto;
+   margin: 0 auto;
+   padding: 0 10px;
+   background-color: var(--light-color);
+}
+
+/* HEADER SELECTORs */
+
+h1 {
+   padding-top: 45px;
+   font-size: 48px;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   color: var(--heavy-color);
+}
+
+/*
+.dots {
+   width: 12px;
+   height: 10px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows:  1fr 1fr;
+}
+
+.dot {
+   width: 3px;
+   height: 3px;
+   border-radius: 50%;
+   background-color: #C4C4C4;
+}
+*/
+
+.overview {
+   display: flex;
+   padding-top: 12px
+}
+
+.site-info {
+   max-width: 600px;
+   width: 100%;
+   font-family: 'Montserrat', sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: var(--special-gray)
+}
+
+.overview > img {
+   margin: 7px 12px auto 4px;
+   width: 12px;
+}
+
+header > img {
+   padding-top: 43px;
+   width: 100%;
+}
+
+/* MAIN SELECTORS */
+
+/* COOKING TIMING */
+
+main {
+   padding: 22px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+}
+
+.cook-info {
+   margin-top: 28px;
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 216px;
+   height: 367px;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+   border-radius: 12px;
+   background-color: var(--special-color);
+   transition: background 0.2s ease-in-out;
+}
+
+.cook-info > div {
+   width: 100%;
+   height: 30px;
+   position: relative;
+}
+
+.cook-info img {
+   height: 30px;
+}
+
+.upper-gray {
+   position: absolute;
+   left: 40px;
+   top: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: bold;
+   font-size: 10px;
+   line-height: 12px;
+   text-transform: uppercase;
+   color: #BDBDBD;
+}
+
+.down-text {
+   position: absolute;
+   top: 15px;
+   left: 40px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: var(--heavy-color);
+}
+
+#orange-text {
+   color: var(--main-color);
+}
+
+/* INSTRUCTIONS */
+
+.instructions {
+   width: 60%;
+   max-width: 600px;
+}
+
+h2 {
+   padding-top: 28px;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 32px;
+   color: var(--dark-gray);
+}
+
+h3 {
+   padding-top: 30px;
+   font-weight: normal;
+   font-family: 'Playfair Display', serif;
+   font-style: italic;
+   font-size: 18px;
+   line-height: 24px;
+   color: var(--dark-gray);
+}
+
+ul, ol {
+   padding-top: 30px;
+   list-style-type: none;
+}
+
+ul > li {
+   position: relative;
+   padding-bottom: 11px;
+}
+
+label {
+   padding-left: 35px;
+   font-weight: normal;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   line-height: 25px;
+   color: var(--dark-gray);
+   display: block;
+}
+
+input {
+   position: absolute;
+   top: 2px;
+   left: 0;
+   width: 21px;
+   height: 21px;
+}
+
+.order {
+   width: 39px;
+   height: 39px;
+   position: absolute;
+   background-color: var(--main-color);
+   border-radius: 6px;
+   text-align: center;
+   font-family: 'Playfair Display', serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 32px;
+   color: var(--light-color);
+}
+
+ol > li {
+   position: relative;
+   padding-bottom: 31px;
+}
+
+article {
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   padding-left: 50px;
+   color: var(--heavy-color);
+}
+
+.source {
+   font-family: 'Montserrat', sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   font-size: 16px;
+   padding: 40px 0;
+   line-height: 150%;
+}
+
+a {
+   text-decoration: none;
+   color: var(--light-gray);
+}
+
+a:hover {
+   color: var(--middle-gray);
+}
+
+footer {
+   padding: 30px 0;
+   font-family: 'Montserrat', sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+   color: var(--middle-gray);
+
+}
+
+footer > span {
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 950px) {
+   main {
+      flex-direction: column;
+   }
+   h1 {
+      padding-top: 30px;
+   }
+   .instructions {
+      max-width: none;
+      width: 100%;
+   }
+   .cook-info {
+      display: grid;
+      justify-content: space-around;
+      grid-column: 1fr 1fr 1fr;
+      width: 100%;
+      margin: 0;
+      height: auto;
+      box-shadow: none;
+      border-radius: none;
+      padding-bottom: 0;
+   }
+   .cook-info > div {
+      width: 185px;
+      height: 60px;
+   }
+   .cook-info > div:first-child {
+      grid-column: 1 / span 3;
+   }
+}
+
+@media (max-width: 575px) {
+   h1 {
+      padding-top: 20px;
+   }
+   .cook-info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 15px 0 0 0;
+   }
+   .cook-info > div:first-child {
+      grid-column: initial;
+   }
+}
+
+/* JS CLASSES */
+
+.box-active + label {
+   text-decoration: line-through;
+   color: var(--light-gray);
+}
